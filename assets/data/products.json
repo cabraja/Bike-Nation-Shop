@@ -1,0 +1,423 @@
+[
+    {
+        "id":0,
+        "name" : "DRT 1.1 Bike",
+        "img": {
+            "src": "https://www.rei.com/media/024534a6-8025-412f-8d61-02a7623eba98.jpg",
+            "alt": "DRT 1.1 Bike"
+        },
+        "href":"product.html?0",
+        "brand": "Co-op Cycles",
+        "price":{
+            "newPrice": 699,
+            "oldPrice": 899
+        },
+        "reviews":{
+            "amount":126,
+            "number": 4.5
+        },
+        "type":"Mountain Bike",
+        "colors":["414833","457b9d","ffb703"],
+        "inStock":true,
+        "topSale":true,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Trail and Mountain",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"27 Inches",
+            "tires":"Kenda Kadre",
+            "weight": 16
+        }
+    },
+    {
+        "id":1,
+        "name" : "DRT 1.2 Bike",
+        "img": {
+            "src": "https://www.rei.com/media/7dd0add9-8845-43f5-89d1-b090489dca5f.jpg",
+            "alt": "DRT 1.2 Bike"
+        },
+        "href":"product.html?1",
+        "brand": "Co-op Cycles",
+        "price":{
+            "newPrice": 999,
+            "oldPrice": null
+        },
+        "reviews":{
+            "amount":85,
+            "number": 4.3
+        },
+        "type":"Mountain Bike",
+        "colors":["414833","457b9d","ffb703","d62828"],
+        "inStock":true,
+        "topSale":false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Trail and Mountain",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"27.5 Inches",
+            "tires":"WTB Trail Boss",
+            "weight": 15
+        }
+    },
+    {
+        "id":2,
+        "name" : "Hatch 1 Bike - 2021",
+        "img": {
+            "src": "https://www.rei.com/media/8da8f526-d5d3-4e07-b0a2-8d1a088b1c69.jpg",
+            "alt": "Hatch 1 Bike - 2021"
+        },
+        "href":"product.html?2",
+        "brand": "Diamondback",
+        "price":{
+            "newPrice": 599,
+            "oldPrice": 729
+        },
+        "reviews":{
+            "amount":219,
+            "number": 4.8
+        },
+        "type":"Mountain Bike",
+        "colors":["22223b", "db222a","40916c"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Cross Country",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"26.5 Inches",
+            "tires":"Vee Tire Co. Rubber Rail",
+            "weight": 19
+        }
+    },
+    {
+        "id":3,
+        "name" : "ADV 2.2 Bike",
+        "img": {
+            "src": "https://www.rei.com/media/b279b84f-33b7-42bf-b50a-48081a0c94a4.jpg",
+            "alt": "ADV 2.2 Bike"
+        },
+        "href":"product.html?3",
+        "brand": "Co-op Cycles",
+        "price":{
+            "newPrice": 1599,
+            "oldPrice": null
+        },
+        "reviews":{
+            "amount":131,
+            "number": 4.9
+        },
+        "type":"Road Bike",
+        "colors":["ced4da", "db222a","40916c"],
+        "inStock":true,
+        "topSale": true,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Gravel and Road Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"27.5 Inches",
+            "tires":"WTB Nano Comp",
+            "weight": 19
+        }
+    },
+    {
+        "id":4,
+        "name" : "Cruiser Go! Step-Through",
+        "img": {
+            "src": "https://www.rei.com/media/e680b67f-34de-46a7-a3df-33bfaa4fabd5.jpg",
+            "alt": "Cruiser Go! Step-Through"
+        },
+        "href":"product.html?4",
+        "brand": "Electra",
+        "price":{
+            "newPrice": 1899,
+            "oldPrice": 2199
+        },
+        "reviews":{
+            "amount":91,
+            "number": 4.4
+        },
+        "type":"Electric Bike",
+        "colors":["89c2d9", "db222a","ffbd00"],
+        "inStock":true,
+        "topSale": true,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Road Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"24.5 Inches",
+            "tires":"Balloon",
+            "weight": 28
+        }
+    },
+    {
+        "id":5,
+        "name" : "ADV 2.2 Bike",
+        "img": {
+            "src": "https://www.rei.com/media/2cf2acec-e356-4922-802a-04642604ecf7.jpg",
+            "alt": "ADV 2.2 Bike"
+        },
+        "href":"product.html?5",
+        "brand": "Co-op Cycles",
+        "price":{
+            "newPrice": 299,
+            "oldPrice": 369
+        },
+        "reviews":{
+            "amount":118,
+            "number": 4.2
+        },
+        "type":"Kids Bike",
+        "colors":["ced4da", "db222a","40916c"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Road Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"20 Inches",
+            "tires":"WTB Nano Comp",
+            "weight": 16
+        }
+    },
+    {
+        "id":6,
+        "name" : "Trail 24 Kids' Bike",
+        "img": {
+            "src": "https://www.rei.com/media/d652883b-9803-4b77-99d5-57912d8a4404.jpg",
+            "alt": "Trail 24 Kids' Bike"
+        },
+        "href":"product.html?6",
+        "brand": "Cannondale",
+        "price":{
+            "newPrice": 599,
+            "oldPrice": 699
+        },
+        "reviews":{
+            "amount":78,
+            "number": 3.8
+        },
+        "type":"Kids Bike",
+        "colors":["ffbd00", "fe6d73","bb9457"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Road Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"23 Inches",
+            "tires":"WTB Nano Comp",
+            "weight": 18
+        }
+    },
+    {
+        "id":7,
+        "name" : "HSD P9 Electric Bike",
+        "img": {
+            "src": "https://www.rei.com/media/3ce52913-b032-45af-8871-460e8eae4900.jpg",
+            "alt": "HSD P9 Electric Bike"
+        },
+        "href":"product.html?7",
+        "brand": "Tern",
+        "price":{
+            "newPrice": 3499,
+            "oldPrice": 3899
+        },
+        "reviews":{
+            "amount":58,
+            "number": 4.0
+        },
+        "type":"Electric Bike",
+        "colors":["b7b7a4", "ded9e2","bb8588"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Road Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"24 Inches",
+            "tires":"Schwalbe Big Apple",
+            "weight": 30
+        }
+    },
+    {
+        "id":8,
+        "name" : "Habit 3 Bike - 2021",
+        "img": {
+            "src": "https://www.rei.com/media/ca1c3300-fdd2-44d0-b574-e27815d636b4.jpg",
+            "alt": "Habit 3 Bike - 2021"
+        },
+        "href":"product.html?8",
+        "brand": "Cannondale",
+        "price":{
+            "newPrice": 2299,
+            "oldPrice": null
+        },
+        "reviews":{
+            "amount":121,
+            "number": 4.9
+        },
+        "type":"Mountain Bike",
+        "colors":["bf0603", "ded9e2","bb8588"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Gravel and Country Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"26 Inches",
+            "tires":"Schwalbe Big Apple",
+            "weight": 18
+        }
+    },
+    {
+        "id":9,
+        "name" : "Boda Boda Electric Cargo Bike",
+        "img": {
+            "src": "https://www.rei.com/media/43846ddb-9b1e-415b-878d-069b81ef2134.jpg",
+            "alt": "Boda Boda Electric Cargo Bike"
+        },
+        "href":"product.html?9",
+        "brand": "Yuda",
+        "price":{
+            "newPrice": 3499,
+            "oldPrice": 2999
+        },
+        "reviews":{
+            "amount":43,
+            "number": 4.1
+        },
+        "type":"Electric Bike",
+        "colors":["ded9e2","bb8588"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Urban Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"25 Inches",
+            "tires":"Schwalbe Big Apple",
+            "weight": 19
+        }
+    },
+    {
+        "id":10,
+        "name" : "Topstone Neo 5",
+        "img": {
+            "src": "https://www.rei.com/media/c5e1a5ac-81ab-48c2-bd06-c51be253319f.jpg",
+            "alt": "Topstone Neo 5"
+        },
+        "href":"product.html?10",
+        "brand": "Cannondale",
+        "price":{
+            "newPrice": 3499,
+            "oldPrice": 3999
+        },
+        "reviews":{
+            "amount":143,
+            "number": 3.9
+        },
+        "type":"Mountain Bike",
+        "colors":["2b2d42","b5838d","212529"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Country Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"27 Inches",
+            "tires":"WTB Exposure",
+            "weight": 18
+        }
+    },
+    {
+        "id":11,
+        "name" : "DRT 4.1 Fat-Tire Bike",
+        "img": {
+            "src": "https://www.rei.com/media/ecd20f36-1262-4c28-9e14-da1797307522.jpg",
+            "alt": "DRT 4.1 Fat-Tire Bike"
+        },
+        "href":"product.html?11",
+        "brand": "Co-op Cycles",
+        "price":{
+            "newPrice": 2199,
+            "oldPrice": null
+        },
+        "reviews":{
+            "amount":112,
+            "number": 3.8
+        },
+        "type":"Mountain Bike",
+        "colors":["212529","b5838d","ba181b"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Gravel Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"29 Inches",
+            "tires":"WTB Exposure",
+            "weight": 22
+        }
+    },
+    {
+        "id":12,
+        "name" : "Spicy Curry V3 Electric Bike",
+        "img": {
+            "src": "https://www.rei.com/media/7e196174-f8e2-42d1-8c19-7bdc6f976467.jpg",
+            "alt": "Spicy Curry V3 Electric Bike"
+        },
+        "href":"product.html?12",
+        "brand": "Yuba",
+        "price":{
+            "newPrice": 3199,
+            "oldPrice": null
+        },
+        "reviews":{
+            "amount":12,
+            "number": 3.9
+        },
+        "type":"Electric Bike",
+        "colors":["212529","b5838d","ba181b"],
+        "inStock":true,
+        "topSale": false,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Urban Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"26 Inches",
+            "tires":"WTB Exposure",
+            "weight": 26
+        }
+    },
+    {
+        "id":13,
+        "name" : "Topstone 1 Alloy Bike",
+        "img": {
+            "src": "https://www.rei.com/media/3e266db1-c288-48c1-a8a0-2880ded326d7.jpg",
+            "alt": "Topstone 1 Alloy Bike"
+        },
+        "href":"product.html?13",
+        "brand": "Cannondale",
+        "price":{
+            "newPrice": 1699,
+            "oldPrice": 1899
+        },
+        "reviews":{
+            "amount":120,
+            "number": 4.7
+        },
+        "type":"Road Bike",
+        "colors":["3a5a40","b5838d","003049"],
+        "inStock":true,
+        "topSale": true,
+        "freeDelivery":true,
+        "details":{
+            "bestUse":"Urban Cycling",
+            "frameMaterial":"Aluminium",
+            "wheelSize":"23 Inches",
+            "tires":"WTB Exposure",
+            "weight": 20
+        }
+    }
+
+]
