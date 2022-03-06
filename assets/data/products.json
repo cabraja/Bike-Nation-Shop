@@ -20,7 +20,7 @@
         "colors":["414833","457b9d","ffb703"],
         "inStock":true,
         "topSale":true,
-        "freeDelivery":true,
+        "freeDelivery":false,
         "details":{
             "bestUse":"Trail and Mountain",
             "frameMaterial":"Aluminium",
@@ -230,7 +230,7 @@
         "colors":["b7b7a4", "ded9e2","bb8588"],
         "inStock":true,
         "topSale": false,
-        "freeDelivery":true,
+        "freeDelivery":false,
         "details":{
             "bestUse":"Road Cycling",
             "frameMaterial":"Aluminium",
@@ -290,7 +290,7 @@
         "colors":["ded9e2","bb8588"],
         "inStock":true,
         "topSale": false,
-        "freeDelivery":true,
+        "freeDelivery":false,
         "details":{
             "bestUse":"Urban Cycling",
             "frameMaterial":"Aluminium",

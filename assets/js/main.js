@@ -18,8 +18,68 @@ $(document).ready(function(){
     }catch(e){
         console.log("No product found with that ID.");
     }
+     // GET WHOLE SHOP
+     try {
+        ajaxCall("products",printShop)
+     } catch (e) {
+         console.log("No items in the store.");
+     }
 
 })
+
+// SORTING FUNCTIONS
+$("#sort").on("change",function(){
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
+$("#price").on("change",function(){
+
+    $(this).next().html($(this).val()+"$");
+
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
+$(".brand").on("change",function(){
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
+$(".type").on("change",function(){
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
+$(".delivery").on("change",function(){
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
+$("#clear-filters").on("click",function(){
+    clearFilters();
+    try {
+        ajaxCall("products",printShop)
+    } catch (e) {
+        console.log("Problem with filtering.");
+    }
+})
+
 
 
 
@@ -85,6 +145,12 @@ const printOneItem = (data) => {
                     <h6>${item.type}</h6>
                     <h5 class="old-price">${item.price.oldPrice ? item.price.oldPrice+"$ " : ""}</h5>
                     <h5>${item.price.newPrice}$</h5>
+                    <div class="available-colors">
+                    <h5>Available Colors:</h5>
+                        <div class="colors">
+                        ${printColors(item.colors)}
+                        </div>
+                    </div>
                     <ul>
                         <li>Best Use: ${item.details.bestUse}</li>
                         <li>Frame Material: ${item.details.frameMaterial}</li>
@@ -99,4 +165,135 @@ const printOneItem = (data) => {
     })
 }
 
+const printColors = (colors) => {
+    let text = "";
+    colors.forEach(color => {
+        text += `
+            <div class="color" style="background-color:#${color}"></div>
+        `;
+    })
 
+    return text;
+}
+
+
+// PRINT WHOLE SHOP
+const printShop = (data) => {
+    let div = document.getElementById("shop-right");
+
+    data = sortFilter(data);
+    data = priceFilter(data);
+    data = brandFilter(data);
+    data = typeFilter(data);
+    data = deliveryFilter(data);
+
+    div.innerHTML = "";
+
+    data.forEach(item => {
+            div.innerHTML += `
+                <a href="${item.href}">
+                <div class="product">
+                    <div class="product-image" style="background-image:url('${item.img.src}')"></div>
+                    <h4>${item.brand}</h4>
+                    <h5 class="product-name">${item.name}</h5>
+                    <h6 class="shop-price ">${item.price.newPrice}$</h6>
+                    <h5 class="product-type">${item.type}</h5>
+                    <h6><i class="fa-solid fa-star-half-stroke"></i> ${item.reviews.number} |${item.reviews.amount} Reviews</h6>
+                </div>
+                </a>
+            `;
+        }
+    )
+}
+
+
+// FILTERS FOR SHOP ======================================================================
+
+const sortFilter = (data) =>{
+    let sortValue = document.getElementById("sort").value;
+
+    if(sortValue === "a-z"){
+        data.sort((a,b) => a.name > b.name ? 1 : -1);
+    }
+    if(sortValue === "z-a"){
+        data.sort((a,b) => a.name < b.name ? 1 : -1);
+    }
+    if(sortValue === "priceDesc"){
+        data.sort((a,b) => a.price.newPrice < b.price.newPrice ? 1 : -1);
+    }
+    if(sortValue === "priceAsc"){
+        data.sort((a,b) => a.price.newPrice > b.price.newPrice ? 1 : -1);
+    }
+
+    return data;
+}
+
+const priceFilter = (data) => {
+    let priceValue = document.getElementById("price").value;
+    let newData = data.filter(item => item.price.newPrice < priceValue);
+
+    return newData;
+}
+
+const brandFilter = (data) => {
+    let chosenbrands = [];
+    $(".brand:checked").each(function(){
+        chosenbrands.push($(this).val());
+        
+    })
+
+    if(chosenbrands.length > 0){
+        return data.filter(item => chosenbrands.includes(item.brand));
+    }
+
+    return data;
+}
+
+const typeFilter = (data) => {
+    let chosenTypes = [];
+    $(".type:checked").each(function(){
+        chosenTypes.push($(this).val());
+        
+    })
+
+    if(chosenTypes.length > 0){
+        return data.filter(item => chosenTypes.includes(item.type));
+    }
+
+    return data;
+}
+
+const deliveryFilter = (data) => {
+    
+    if(document .getElementById("freeDelivery").checked){
+        return data.filter(item => item.freeDelivery === true)
+    }
+    if(document .getElementById("paidDelivery").checked){
+        return data.filter(item => item.freeDelivery === false)
+    }
+
+    return data;
+}
+
+const clearFilters = () => {
+    $("#price").val(4000);
+
+    $(".brand").each(function(){
+        $(this).prop("checked",false);
+    })
+
+    $(".type").each(function(){
+        $(this).prop("checked",false);
+    })
+
+    $(".delivery").each(function(){
+        $(this).prop("checked",false);
+    })
+}
+
+
+// CART FUNCTIONS =========================================================================
+
+$("#add-to-cart").on("click",function(){
+    
+})

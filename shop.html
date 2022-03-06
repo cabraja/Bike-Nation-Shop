@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Nation</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://kit.fontawesome.com/86a7bb3b6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <header class="alt-header">
+            <h1><a href="index.html ">Bike Nation</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Contact</a>
+                <a href="#">Author</a>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </nav>
+        </header>
+    </div>
+
+    <div id="shop">
+        <div id="shop-left-wrapper">
+            <div id="shop-left">
+                <select name="sort" id="sort">
+                    <option value="default">Sort By...</option>
+                    <option value="a-z">Name: A - Z</option>
+                    <option value="z-a">Name: Z - A</option>
+                    <option value="priceDesc">Price: High to Low</option>
+                    <option value="priceAsc">Price: Low to High</option>
+                </select>
+            
+                <div class="form-group">
+                    <label for="price">Filter By Price:</label>
+                    <input type="range" name="price" id="price" min="300" max="4000" step="10" value="4000">
+                    <p>4000$</p>
+                </div>
+            
+            
+                <div class="form-group">
+            
+                    <h4>Brand:</h4>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Co-op Cycles">
+                        <label for="">Co-op Cycles</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Cannondale">
+                        <label for="">Cannondale</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Diamondback">
+                        <label for="">Diamondback</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Electra">
+                        <label for="">Electra</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Tern">
+                        <label for="">Tern</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="brand" name="brand" value="Yuda">
+                        <label for="">Yuda</label>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <h4>Type:</h4>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" class="type" name="type" value="Mountain Bike">
+                        <label for="">Mountain Bike</label>
+                    </div>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" class="type" name="type" value="Road Bike">
+                        <label for="">Road Bike</label>
+                    </div>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" class="type" name="type" value="Electric Bike">
+                        <label for="">Electric Bike</label>
+                    </div>
+            
+                    <div class="checkbox">
+                        <input type="checkbox" class="type" name="type" value="Kids Bike">
+                        <label for="">Kids Bike</label>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+            
+                    <h4>Delivery:</h4>
+            
+                    <div class="checkbox">
+                        <input type="radio" name="delivery" class="delivery" id="freeDelivery">
+                        <label for="">Free</label>
+                    </div>
+            
+                    <div class="checkbox">
+                        <input type="radio" name="delivery" class="delivery" id="paidDelivery">
+                        <label for="">Paid</label>
+                    </div>
+                </div>
+            
+                <button id="clear-filters">Clear Filters</button>
+            </div>
+        </div>
+        
+        <div id="shop-right">
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">Documentation</a>
+        <a href="#">Author</a>
+        <a href="#">Contact</a>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="./assets/js/slideshow.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
