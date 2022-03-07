@@ -348,9 +348,23 @@ const addToCart = (data) => {
 }
 
 const printCart = (data) => {
+
     let bikeIds = localStorage.getItem("bikeId");
     let cartDiv = document.getElementById("cart");
     cartDiv.innerHTML = "";
+
+    // FUNCTION TO COUNT THE DUPLICATES (QUANTITY)
+    const countDuplicates = (id) => {
+        let count = 0;
+        bikeIds.forEach(item => {
+            if(item == id){
+                count++;
+            }
+        })
+
+        return count;
+    }
+
 
     if(bikeIds !== null){
        bikeIds = bikeIds.split(",");
@@ -359,10 +373,20 @@ const printCart = (data) => {
         data.forEach(item => {
             if(bikeIds.includes(String(item.id))){
             cartDiv.innerHTML += `
-                
+                <div class="cart-item">
+                    <div class="cart-item-left" style="background-image:url('${item.img.src}')"></div>
+                    <div class="cart-item-right">
+                        <h5>${item.brand}</h5>
+                        <h4>${item.name}</h4>
+                        <h6>${item.price.newPrice*countDuplicates(item.id)} $</h6>
+                        <p>Quantity: ${countDuplicates(item.id)}</p>
+                    </div>
+                </div>
             `;
        }
     })
+    }else{
+        cartDiv.innerHTML = "<span>Nothing in cart yet...<span>";
     }
 
 }
