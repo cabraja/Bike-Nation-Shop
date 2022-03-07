@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Nation</title>
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/resonsive.css">
     <script src="https://kit.fontawesome.com/86a7bb3b6f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div id="modal">
+        <h2>Item Added To Cart</h2>
+    </div>
 
     <button id="open-cart"><i class="fa-solid fa-cart-shopping"></i></button>
 
@@ -22,17 +27,30 @@
     <div id="header-wrapper">
         <header>
             <h1><a href="index.html ">Bike Nation</a></h1>
-            <nav>
+            <nav id="nav-main">
                 <a href="index.html">Home</a>
                 <a href="shop.html">Shop</a>
-                <a href="#">Contact</a>
-                <a href="#">Author</a>
+                <a href="contact.html">Contact</a>
+                <a href="author.html">Author</a>
                 <i class="fa-solid fa-earth-americas"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-solid fa-envelope"></i>
             </nav>
+
+            <nav id="nav-alt">
+                <i id="close-nav" class="fa-regular fa-circle-xmark"></i>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="author.html">Author</a>
+            </nav>
+
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
+
 
 
     <div id="slideshow">
@@ -102,9 +120,18 @@
     </div>
 
     <footer>
-        <a href="#">Documentation</a>
-        <a href="#">Author</a>
-        <a href="#">Contact</a>
+        <div id="footer-links">
+            <a href="#">Documentation</a>
+            <a href="author.html">Author</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+        <div id="footer-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
     </footer>
 
 </body>

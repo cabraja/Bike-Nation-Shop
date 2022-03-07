@@ -16,6 +16,33 @@ body {
 }
 /* 
 ================================================================
+MODAL
+================================================================
+*/
+#modal {
+	width: fit-content;
+	padding: 12px 24px;
+	color: whitesmoke;
+	background-color: #405f51;
+	border-radius: 4px;
+	position: fixed;
+	z-index: 6;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -200px;
+	transition: 0.7s ease-out;
+}
+#modal h2 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+/* 
+================================================================
 CART STYLES
 ================================================================
 */
@@ -174,6 +201,10 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
+}
+#nav-alt {
+	display: none;
 }
 nav a {
 	text-decoration: none;
@@ -206,6 +237,17 @@ h1:hover a {
 nav i {
 	font-size: 1.4rem;
 	margin-left: 16px;
+}
+#burger {
+	display: none;
+	font-size: 2.4rem;
+	background-color: transparent;
+	color: #f7f7f7;
+	border: none;
+	outline: none;
+	padding: 4px 12px;
+	border-radius: 6px;
+	transform: scaleX(120%);
 }
 /* 
 ================================================================
@@ -375,6 +417,7 @@ TRENDING
 	font-size: 1.1rem;
 	color: rgb(43, 43, 43);
 	font-variation-settings: "wght" 300;
+	text-align: center;
 }
 .product-type {
 	font-size: 0.9rem;
@@ -528,6 +571,10 @@ SHOP
 	font-weight: 600;
 	color: #292929;
 }
+#shop-left label {
+	font-weight: bold;
+	font-variation-settings: "wght" 300;
+}
 
 #shop-right {
 	display: grid;
@@ -586,22 +633,217 @@ option {
 
 /* 
 =========================================================
+AUTHOR PAGE
+=========================================================
+ */
+
+#author-wrapper {
+	margin-top: 20vh;
+	width: 100%;
+	height: fit-content;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+#author-left img {
+	border: #272727 12px solid;
+	width: 16vw;
+}
+#author-right {
+	width: 40vw;
+	margin-left: 4vw;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#author-right h1 {
+	margin: 0;
+	margin-bottom: 2vh;
+}
+#author-right p {
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+	color: #585858;
+}
+#author-right h2 {
+	margin-top: 2vh;
+}
+#author-right ul {
+	margin-left: 30px;
+}
+#author-right li {
+	font-weight: bold;
+	color: #272727;
+	margin-top: 6px;
+	font-size: 1.2rem;
+}
+
+/* 
+===================================
+CONTACT
+==================================
+ */
+#contact-wrapper {
+	margin-top: 14vh;
+	width: fit-content;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+}
+form {
+	margin-right: 8vw;
+}
+.form-group {
+	margin-top: 2vh;
+}
+
+#contact-wrapper .form-group label {
+	margin-bottom: 6px;
+	font-weight: bold;
+	font-size: 1rem;
+	font-variation-settings: "wght" 400;
+}
+#contact-wrapper .form-group input {
+	font-size: 1rem;
+	padding: 4px 8px;
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+	border: 2px solid #5f5f5f;
+	border-radius: 6px;
+}
+#contact-wrapper .form-group select {
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+	border: 2px solid #5f5f5f;
+	border-radius: 6px;
+}
+#contact-wrapper .form-group option {
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+}
+#contact-wrapper .form-group p {
+	font-variation-settings: "wght" 200;
+	font-weight: bold;
+	margin-top: 4px;
+	color: #5a5a5a;
+}
+
+textarea {
+	height: 16vh;
+	width: 100%;
+	resize: none;
+	font-size: 1.1rem;
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+	border: 2px solid #5f5f5f;
+	border-radius: 6px;
+}
+
+#success-message {
+	font-size: 1.2rem;
+	margin-top: 12px;
+	font-weight: bold;
+}
+
+.correct {
+	border: 2px solid rgb(45, 182, 141) !important;
+}
+.false {
+	border: 2px solid rgb(248, 128, 128) !important;
+}
+/* Inputs ----------------------------- */
+
+#check {
+	font-size: 1.3rem !important;
+	width: fit-content;
+	padding: 6px 30px !important;
+	border-radius: 8px;
+	border: 2px solid #2d6a4f !important;
+	background-color: #2d6a4f;
+	color: whitesmoke;
+	transition: 0.3s;
+	cursor: pointer;
+}
+#check:hover {
+	background-color: transparent;
+	color: #2d6a4f;
+	transition: 0.3s;
+}
+
+#contact-right {
+	width: 30vw;
+}
+#contact-right h2 {
+	border-bottom: 1px solid gray;
+	padding-bottom: 4px;
+	font-size: 2rem;
+	margin-bottom: 2vh;
+}
+#contact-right p {
+	color: #494949;
+	font-weight: bold;
+	font-variation-settings: "wght" 200;
+	font-size: 1.1rem;
+	margin-top: 2vh;
+}
+
+/* 
+=========================================================
 FOOTER
 =========================================================
  */
 
 footer {
-	background-color: rgb(43, 43, 43);
+	background: rgb(44, 44, 44);
 	width: 100%;
-	padding: 3vh 0;
+	padding: 4vh 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .footer-alt {
 	position: absolute;
 	bottom: 0;
+	left: 0;
 }
 footer a {
 	color: whitesmoke;
 	text-decoration: none;
+	font-size: 1.3rem;
+	margin-left: 8px;
+	margin-right: 8px;
+	transition: 0.2s ease;
+}
+
+footer a:hover {
+	color: #2d6a4f;
+}
+
+#footer-links {
+	border-bottom: 1px solid rgb(95, 95, 95);
+	padding-bottom: 12px;
+	width: 50vw;
+	text-align: center;
+}
+#footer-icons {
+	margin-top: 18px;
+}
+#footer-icons i {
+	color: whitesmoke;
+	font-size: 1.5rem;
+	margin-left: 8px;
+	margin-right: 8px;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+#footer-icons i:hover {
+	color: #2d6a4f;
 }
 
 /* TRACK STYLE */

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Nation</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/resonsive.css">
+    <script src="https://kit.fontawesome.com/86a7bb3b6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="modal">
+        <h2>Item Added To Cart</h2>
+    </div>
+
+    <button id="open-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+
+    <div id="cart-wrapper">
+        <h2>Your Cart</h2>
+        <div id="cart">
+        </div>
+        <button id="empty-cart">Empty Cart</button>
+    </div>
+
+    <div id="header-wrapper">
+        <header class="alt-header">
+            <h1><a href="index.html ">Bike Nation</a></h1>
+            <nav id="nav-main">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="author.html">Author</a>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </nav>
+    
+            <nav id="nav-alt">
+                <i id="close-nav" class="fa-regular fa-circle-xmark"></i>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="author.html">Author</a>
+            </nav>
+    
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<div id="contact-wrapper">
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe">
+            <p></p>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@mail.com">
+            <p></p>
+        </div>
+
+        <div class="form-group">
+            <label for="bike">Favourite Bike Type:</label>
+            <select name="bike" id="bike">
+                <option value="default-option">Select...</option>
+                <option value="Mountain">Mountain</option>
+                <option value="Road">Road</option>
+                <option value="Electric">Electric</option>
+                <option value="Kids">Kids</option>
+                <option value="other">Other</option>
+            </select>
+            <p></p>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" cols="40"></textarea>
+            <p></p>
+        </div>
+
+        <div class="form-group">
+            <input type="button" value="Send" name="check" id="check">
+            <p id="success-message"></p>
+        </div>
+
+
+    </form>
+
+    <div id="contact-right">
+        <h2>Contact Us</h2>
+
+        <p>Thank you for using our site! We hope you are happy with our products and services. If you have a complaint or a question, feel free to contact us through the contact form on this page.</p> 
+        <p>Also, if you are not so techy, you can write us a letter to the following address: 125 E Main St. Number 533, American Fork, Utah, 84003.</p>
+    </div>
+</div>
+
+    <footer class="footer-alt">
+        <div id="footer-links">
+            <a href="#">Documentation</a>
+            <a href="author.html">Author</a>
+            <a href="#">Sitemap</a>
+        </div>
+    
+        <div id="footer-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/form.js"></script>
+
+</html>

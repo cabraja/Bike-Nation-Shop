@@ -88,6 +88,12 @@ $("#clear-filters").on("click",function(){
 
     $(document).on("click","#add-to-cart",function(){
         addToCart($(this).data("id"));
+
+        $("#modal").css({"margin-top":"6vh"});
+        setTimeout(function(){
+            $("#modal").css({"margin-top":"-200px"})
+        },2000)
+
         try {
             ajaxCall("products",printCart)
         } catch (e) {
@@ -116,6 +122,14 @@ $("#clear-filters").on("click",function(){
         } catch (e) {
             console.log("Problem with loading cart.");
         }
+    })
+
+    $(document).on("click","#burger",function(){
+        $("#nav-alt").css("transform","translateX(0%)")
+    })
+
+    $(document).on("click","#close-nav",function(){
+        $("#nav-alt").css("transform","translateX(100%)")
     })
 
 
@@ -368,7 +382,6 @@ const printCart = (data) => {
 
     if(bikeIds !== null){
        bikeIds = bikeIds.split(",");
-        console.log(bikeIds);
 
         data.forEach(item => {
             if(bikeIds.includes(String(item.id))){
