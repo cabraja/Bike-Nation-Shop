@@ -10,14 +10,60 @@
 	font-family: NotoSerif;
 }
 
-html {
-	min-height: 100vh;
-}
 body {
 	overflow-x: hidden;
 	background-color: rgb(255, 255, 255);
 }
-
+/* 
+================================================================
+CART STYLES
+================================================================
+*/
+#cart-wrapper {
+	width: 40vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: white;
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: 2px solid grey;
+	transform: translateX(100%);
+	transition: 0.5s ease-in-out;
+	padding: 3vh 5vw;
+}
+#cart {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: #323232;
+}
+#cart-wrapper h4 {
+	font-size: 2rem;
+	color: #323232;
+}
+#open-cart {
+	position: fixed;
+	bottom: 20px;
+	right: 35px;
+	z-index: 5;
+	background-color: #2d6a4f;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	padding: 18px 22px;
+	font-size: 2rem;
+	color: whitesmoke;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: 0.2s;
+}
+#open-cart:hover {
+	background-color: #4c898b;
+}
 /* 
 ================================================================
 HEADER

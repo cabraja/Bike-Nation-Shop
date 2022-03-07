@@ -1,6 +1,8 @@
 // SET CURRENT PRODUCT ID FROM URL (default is 0)
 let product_id = 0;
 product_id = window.location.search.replace("?","");
+// DEFAULT VALUE FOR CART
+localStorage.setItem("cartOpen",false);
 
 
 
@@ -24,17 +26,21 @@ $(document).ready(function(){
      } catch (e) {
          console.log("No items in the store.");
      }
+     // GET CART ITEMS
+     try {
+        ajaxCall("products",printCart)
+     } catch (e) {
+         console.log("No items in the store.");
+     }
 
-})
-
-// SORTING FUNCTIONS
-$("#sort").on("change",function(){
-    try {
-        ajaxCall("products",printShop)
-    } catch (e) {
-        console.log("Problem with filtering.");
-    }
-})
+     // SORTING FUNCTIONS
+    $("#sort").on("change",function(){
+        try {
+            ajaxCall("products",printShop)
+        } catch (e) {
+            console.log("Problem with filtering.");
+        }
+    })
 
 $("#price").on("change",function(){
 
@@ -78,6 +84,41 @@ $("#clear-filters").on("click",function(){
     } catch (e) {
         console.log("Problem with filtering.");
     }
+})
+
+    $(document).on("click","#add-to-cart",function(){
+        addToCart($(this).data("id"));
+        try {
+            ajaxCall("products",printCart)
+        } catch (e) {
+            console.log("Problem with loading cart.");
+        }
+    })
+
+    $(document).on("click","#open-cart",function(){
+
+        let cartOpen = localStorage.getItem("cartOpen");
+
+        if(cartOpen === "false"){
+            $("#cart-wrapper").css("transform","translateX(0%)");
+            localStorage.setItem("cartOpen","true");
+        }
+        else{
+            $("#cart-wrapper").css("transform","translateX(100%)");
+            localStorage.setItem("cartOpen","false");
+        }
+
+    })
+    $(document).on("click","#empty-cart",function(){
+        localStorage.removeItem("bikeId");
+        try {
+            ajaxCall("products",printCart)
+        } catch (e) {
+            console.log("Problem with loading cart.");
+        }
+    })
+
+
 })
 
 
@@ -158,7 +199,7 @@ const printOneItem = (data) => {
                         <li>Tires: ${item.details.tires}</li>
                         <li>Weight: ${item.details.weight} kg</li>
                     </ul>
-                    <button id="add-to-cart">Add To Cart</button>
+                    <button id="add-to-cart" data-id="${item.id}">Add To Cart</button>
                 </div>
             `;
         }
@@ -294,6 +335,34 @@ const clearFilters = () => {
 
 // CART FUNCTIONS =========================================================================
 
-$("#add-to-cart").on("click",function(){
-    
-})
+
+const addToCart = (data) => {
+    if(localStorage.getItem("bikeId") !== null){
+        let current = localStorage.getItem("bikeId");
+        current += ","+data;
+        localStorage.setItem("bikeId",current);
+    }
+    else{
+        localStorage.setItem("bikeId",data);
+    }
+}
+
+const printCart = (data) => {
+    let bikeIds = localStorage.getItem("bikeId");
+    let cartDiv = document.getElementById("cart");
+    cartDiv.innerHTML = "";
+
+    if(bikeIds !== null){
+       bikeIds = bikeIds.split(",");
+        console.log(bikeIds);
+
+        data.forEach(item => {
+            if(bikeIds.includes(String(item.id))){
+            cartDiv.innerHTML += `
+                
+            `;
+       }
+    })
+    }
+
+}
