@@ -232,6 +232,9 @@
 		justify-content: space-evenly;
 		width: 90vw;
 		margin-bottom: 1vh;
+		border-bottom: 1px solid gray;
+		padding-bottom: 18px;
+		margin-bottom: 18px;
 	}
 	#filter-div select {
 		font-size: 1rem;
