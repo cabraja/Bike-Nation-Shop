@@ -333,6 +333,12 @@
 ===============================================
  */
 @media only screen and (max-width: 600px) {
+	.slide-content h4 {
+		font-size: 1.2rem !important;
+	}
+	.slide-content p {
+		font-size: 0.8rem !important;
+	}
 	#cart-wrapper {
 		width: 80vw;
 	}
