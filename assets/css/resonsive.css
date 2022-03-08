@@ -338,6 +338,10 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	#open-cart {
+		right: 16px;
+		bottom: 20px;
+	}
 }
 
 /* 
