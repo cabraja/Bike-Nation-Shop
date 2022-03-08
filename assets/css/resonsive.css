@@ -345,6 +345,9 @@
 		right: 16px;
 		bottom: 20px;
 	}
+	#contact-wrapper {
+		margin-top: 20vh;
+	}
 	textarea {
 		height: 22vh;
 	}
