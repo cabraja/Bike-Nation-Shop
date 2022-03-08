@@ -26,7 +26,30 @@
 	}
 
 	#product-left img {
-		width: 30vw;
+		width: 40vw;
+	}
+	#product-contact p {
+		font-size: 1rem;
+	}
+	#product-contact p i {
+		margin-right: 6px;
+	}
+	#product-right h4 {
+		font-size: 1.4rem;
+	}
+	#product-right h3 {
+		font-size: 1.6rem;
+	}
+	#product-right h6 {
+		font-size: 1rem;
+		margin-bottom: 8px;
+	}
+	#product-right h5 {
+		font-size: 1.1rem;
+	}
+	#product-right li {
+		margin-top: 4px;
+		font-size: 1rem;
 	}
 
 	#contact-wrapper .form-group label {
@@ -228,6 +251,56 @@
 	.product-image {
 		width: 25vw;
 	}
+
+	#single-product {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 18vh;
+	}
+	#product-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#product-right {
+		margin-top: 5vh;
+		margin-left: 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+	#product-right h4 {
+		font-size: 1.8rem;
+	}
+	#product-right h3 {
+		font-size: 2rem;
+	}
+	#product-right h6 {
+		font-size: 1.5rem;
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+	#product-right h5 {
+		font-size: 1.6rem;
+	}
+	#product-right li {
+		margin-top: 4px;
+		font-size: 1rem;
+	}
+	.colors {
+		justify-content: space-evenly;
+		margin-bottom: 2vh;
+	}
+	.color {
+		margin-right: 0;
+		width: 30px;
+		height: 30px;
+	}
+	#add-to-cart {
+		margin-top: 5vh;
+	}
+
 	#contact-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -322,6 +395,59 @@
 	.product-image {
 		width: 60vw;
 	}
+
+	#single-product {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 18vh;
+	}
+	#product-left img {
+		width: 70vw;
+	}
+	#product-contact p {
+		font-size: 0.9rem;
+	}
+	#product-contact i {
+		font-size: 1.8rem;
+	}
+	#product-contact p i {
+		margin-right: 6px;
+	}
+	#product-right {
+		margin-top: 5vh;
+		margin-left: 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+	#product-right h4 {
+		font-size: 1.2rem;
+	}
+	#product-right h3 {
+		font-size: 1.4rem;
+	}
+	#product-right h6 {
+		font-size: 1.1rem;
+		margin-bottom: 8px;
+	}
+	#product-right h5 {
+		font-size: 1.1rem;
+	}
+	#product-right li {
+		margin-top: 4px;
+		font-size: 1rem;
+	}
+	.colors {
+		justify-content: space-evenly;
+		margin-bottom: 2vh;
+	}
+	.color {
+		margin-right: 0;
+		width: 30px;
+		height: 30px;
+	}
+
 	footer a {
 		font-size: 1rem;
 	}
