@@ -132,10 +132,7 @@ $("#clear-filters").on("click",function(){
         $("#nav-alt").css("transform","translateX(100%)")
     })
 
-
 })
-
-
 
 
 // AJAX CALL
