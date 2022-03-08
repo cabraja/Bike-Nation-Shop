@@ -345,6 +345,9 @@
 		right: 16px;
 		bottom: 20px;
 	}
+	textarea {
+		height: 22vh;
+	}
 }
 
 /* 
